@@ -1,0 +1,138 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+      "props": {
+        "experimentalOptimizeRendering": true
+      },
+      "children": [
+        "menu-item#category-corinthians",
+        "menu-item#category-home",
+        "menu-item#more",
+        "menu-item#category-home1",
+        "menu-item#category-home2",
+        "menu-item#category-home3",
+        "menu-item#category-home4",
+        "menu-item#category-home5"
+      ]
+    },
+    "menu-item#category-corinthians": {
+      "props": {
+        "id": "menu-item-category-corinthians",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/",
+          "noFollow": false,
+          "tagTitle": "corinthians",
+          "text": "CORINTHIANS"
+        }
+      }
+    },
+    "menu-item#category-home": {
+      "props": {
+        "id": "menu-item-category-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/home---decor/",
+          "noFollow": false,
+          "tagTitle": "Home & Decor",
+          "text": "Home & Decor"
+        }
+      }
+    },
+    "menu-item#more": {
+      "props": {
+        "id": "menu-item-custom-sale",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "More",
+          "text": "More"
+        }
+      }
+    },
+    "menu-item#category-home1": {
+        "props": {
+          "id": "menu-item-category-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/home---decor/",
+            "noFollow": false,
+            "tagTitle": "Home & Decor",
+            "text": "Home & Decor"
+          }
+        }
+      },
+      "menu-item#category-home2": {
+        "props": {
+          "id": "menu-item-category-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/home---decor/",
+            "noFollow": false,
+            "tagTitle": "Home & Decor",
+            "text": "Home & Decor"
+          }
+        }
+      },
+      "menu-item#category-home3": {
+        "props": {
+          "id": "menu-item-category-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/home---decor/",
+            "noFollow": false,
+            "tagTitle": "Home & Decor",
+            "text": "Home & Decor"
+          }
+        }
+      },
+      "menu-item#category-home4": {
+        "props": {
+          "id": "menu-item-category-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/home---decor/",
+            "noFollow": false,
+            "tagTitle": "Home & Decor",
+            "text": "Home & Decor"
+          }
+        }
+      },
+      "menu-item#category-home5": {
+        "props": {
+          "id": "menu-item-category-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/home---decor/",
+            "noFollow": false,
+            "tagTitle": "Home & Decor",
+            "text": "Home & Decor"
+          }
+        }
+      }
+  }
+  

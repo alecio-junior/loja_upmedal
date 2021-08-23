@@ -1,0 +1,27 @@
+.sellingPrice{
+    color: #59ff00;
+    font-size:1.3rem;
+}
+
+.installments--summary{
+    color: #59ff00;
+    font-size:1.rem;
+    margin-bottom: 20px;
+}
+.listPrice--summary{
+    color: #59ff00;
+}
+.currencyLiteral--summary{
+    color: #59ff00;
+}
+.currencyCode--summary{
+    color: #59ff00;
+}
+
+.currencyInteger--summary{
+    color: #59ff00;
+}
+
+.currencyFraction--summary{
+    color: #59ff00;
+}

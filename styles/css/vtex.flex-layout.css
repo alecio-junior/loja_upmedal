@@ -1,0 +1,43 @@
+  .flexCol {
+    background-color: #212121;
+  }
+  .flexColChild {
+    background-color: #212121;
+  }
+
+  .flexCol--comprar{
+    width: 200px;
+    height: 200px;
+    background-color: #303030;
+    margin-left: 30px;
+  }
+  .flexColChild{
+    background-color: #303030;
+  }
+  .flexColChild--productRating{
+    background-color: #424242;
+  }
+
+  .flexRowContent--main-header-mobile{
+    background-color: #212121;
+    position: fixed;
+    margin-top: 0px;
+    right: 2px;
+    width: 100%;
+    
+  }
+
+  .flexColChild--logo2{
+    background-color: #212121;
+  }
+
+  
+  
+
+  
+
+
+  
+  
+
+  

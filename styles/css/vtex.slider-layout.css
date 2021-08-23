@@ -1,0 +1,15 @@
+.sliderLayoutContainer--shelf{
+    background-color: #303030;
+    margin-top: 50px;
+}
+.sliderRightArrow--carousel{
+    padding-top: 340px;
+    padding-right: 200px;
+}
+.sliderLeftArrow--carousel{
+    padding-top: 340px;
+    padding-left: 200px;
+}
+.slideChildrenContainer{
+    background-color: #303030;
+}

@@ -1,0 +1,291 @@
+
+  {
+    "store.home": {
+      "blocks": [
+      "tab-layout#home"
+    ]
+    },
+
+    //criação tab layout
+
+    "tab-layout#home": {
+      "children": [
+        "tab-list",
+        "tab-content"
+  ]
+},
+    "tab-list": {
+      "children": [
+       "tab-list.item#palmeiras",
+       "tab-list.item#corinthians",
+       "tab-list.item#signos",
+       "tab-list.item#guerreiro",
+       "tab-list.item#promocao"
+    ]
+},
+    "tab-content": {
+     "children": [
+     "tab-content.item#palmeiras",
+     "tab-content.item#corinthians",
+     "tab-content.item#signos",
+     "tab-content.item#guerreiro",
+     "tab-content.item#promocao"
+    ]
+},
+"tab-list.item#palmeiras": {
+  "props": {
+    "tabId": "palmeiras",
+    "label": "palmeiras",
+    "defaultActiveTab": true,
+    "blockClass": "menu"
+  }
+},
+"tab-list.item#corinthians": {
+  "props": {
+    "tabId": "corinthians",
+    "label": "corinthians",
+    "blockClass": "menu"
+  }
+},
+"tab-list.item#signos": {
+    "props": {
+      "tabId": "signos",
+      "label": "signos",
+      "blockClass": "menu"
+    }
+  },
+  "tab-list.item#guerreiro": {
+    "props": {
+      "tabId": "guerreiro",
+      "label": "guerreiro",
+      "blockClass": "menu"
+    }
+  },
+  "tab-list.item#promocao": {
+    "props": {
+      "tabId": "promocao",
+      "label": "promoção",
+      "blockClass": "menu"
+    }
+  },
+
+"tab-content.item#palmeiras": {
+  "children": [
+    "slider-layout#text-test",
+    "flex-layout.row#palmeiras"
+  ],
+  "props": {
+    "tabId": "palmeiras"
+  }
+},
+"tab-content.item#corinthians": {
+  "children": [
+    "slider-layout#text-test",
+    "flex-layout.row#corinthians"
+  ],
+  "props": {
+    "tabId": "corinthians"
+  }
+},
+"tab-content.item#signos": {
+    "children": [
+      "slider-layout#text-test",
+     "flex-layout.row#signos"
+    ],
+    "props": {
+      "tabId": "signos"
+    }
+  },
+  "tab-content.item#guerreiro": {
+    "children": [
+      "slider-layout#text-test",
+      "flex-layout.row#guerreiro"
+    ],
+    "props": {
+      "tabId": "guerreiro"
+    }
+  },
+  "tab-content.item#promocao": {
+    "children": [
+      "slider-layout#text-test",
+      "flex-layout.row#promocao"
+    ],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+
+  //slide na home
+  "slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": [ "image#example1", "image#example2"]
+  }, 
+
+  "image#example1": {
+    "props": {
+      "src": "assets/banner-wood2.png",
+      "maxHeight": 300
+    }
+  },
+  "image#example2": {
+    "props": {
+      "src": "assets/banner-wood.png",
+      "maxHeight": 300
+    }
+  },
+
+  //flex layout com os produtos da categoria palmeiras
+  "flex-layout.row#palmeiras": {
+    "children": ["flex-layout.col#palmeiras"]
+  },
+  "flex-layout.col#palmeiras": {
+    "children": ["list-context.product-list#palmeiras"]
+  },
+    "list-context.product-list#palmeiras": {
+      "blocks": ["product-summary.shelf"],
+      "children": ["slider-layout#products-palmeiras"],
+      "props":{
+        "category":"20/23",
+        "maxItems": 4,
+        "hideUnavailableItems":true
+      }
+    },
+    "slider-layout#products-palmeiras": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    },
+    
+    //flex layout com os produtos da categoria signos
+    "flex-layout.row#signos": {
+      "children": ["flex-layout.col#signos"]
+    },
+    "flex-layout.col#signos": {
+      "children": ["list-context.product-list#signos"]
+    },
+      "list-context.product-list#signos": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#products-signos"],
+        "props":{
+          "category":"20/21",
+          "maxItems": 4,
+          "hideUnavailableItems":true
+        }
+      },
+      "slider-layout#products-signos": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 1
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass": "shelf"
+        }
+      },
+
+      //flex layout com os produtos da categoria corinthians
+      "flex-layout.row#corinthians": {
+        "children": ["flex-layout.col#corinthians"]//"flex-layout.col#shelf2"]
+      },
+      "flex-layout.col#corinthians": {
+        "children": ["list-context.product-list#corinthians"]
+      },
+        "list-context.product-list#corinthians": {
+          "blocks": ["product-summary.shelf"],
+          "children": ["slider-layout#products-corinthians"],
+          "props":{
+            "category":"20/22",
+            "maxItems": 4,
+            "hideUnavailableItems":true
+          }
+        },
+        "slider-layout#products-corinthians": {
+          "props": {
+            "itemsPerPage": {
+              "desktop": 4,
+              "tablet": 3,
+              "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf"
+          }
+        },
+
+        //flex layout com os produtos da categoria guerreiro
+        "flex-layout.row#guerreiro": {
+          "children": ["flex-layout.col#guerreiro"]
+        },
+        "flex-layout.col#guerreiro": {
+          "children": ["list-context.product-list#guerreiro"]
+        },
+          "list-context.product-list#guerreiro": {
+            "blocks": ["product-summary.shelf"],
+            "children": ["slider-layout#products-guerreiro"],
+            "props":{
+              "category":"20/27",
+              "maxItems": 4,
+              "hideUnavailableItems":true
+            }
+          },
+          "slider-layout#products-guerreiro": {
+            "props": {
+              "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+              },
+              "infinite": true,
+              "fullWidth": false,
+              "blockClass": "shelf"
+            } 
+          },
+    
+           //flex layout com os produtos da categoria promoção 
+          "flex-layout.row#promocao": {
+            "children": ["flex-layout.col#promocao"]
+          },
+          "flex-layout.col#promocao": {
+            "children": ["list-context.product-list#promocao"]
+          },
+            "list-context.product-list#promocao": {
+              "blocks": ["product-summary.shelf"],
+              "children": ["slider-layout#products-promocao"],
+              "props":{
+                "category":"20/24",
+                "maxItems": 6,
+                "hideUnavailableItems":true
+              }
+            },
+            "slider-layout#products-promocao": {
+              "props": {
+                "itemsPerPage": {
+                  "desktop": 4,
+                  "tablet": 3,
+                  "phone": 1
+                },
+                "infinite": true,
+                "fullWidth": false,
+                "blockClass": "shelf"
+              }
+            }
+
+          }

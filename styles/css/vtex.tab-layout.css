@@ -1,0 +1,25 @@
+.listContainer{
+    background-color: #212121;
+   
+}
+.listItem--menu {
+    background-color: #212121;
+}
+
+.listItemActive--menu {
+    border-bottom: 2px solid #59ff00;
+    color: #59ff00;
+    background-color: #212121;
+}
+
+@media (max-width: 1024px)
+{
+    .listContainer{
+        margin-top: 80px;
+        background-color: #212121;
+        position:relative;
+    }
+}
+
+
+ 
